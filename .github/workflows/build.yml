@@ -40,9 +40,8 @@ jobs:
 
       uses: hendrikmuhs/ccache-action@v1
 
-      if: runner.os == 'Linux'
-
-      with:
+      if: runner.os == 'Linux' 
+      with:
 
         key: ${{ matrix.os }}-${{ matrix.enable_ui }}
 
@@ -122,4 +121,4 @@ jobs:
 
           D:/a/aseprite/aseprite/build/bin/data
 
-          D:/a/aseprite/aseprite/build/bin/asaseprite.exe
+          D:/a/aseprite/aseprite/build/bin/aseprite.exe
